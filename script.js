@@ -211,7 +211,7 @@ const markdown = `# Hồ Chí Minh
 - Văn nghệ phải phục vụ cách mạng, phục vụ nhân dân
 ### Chú trọng tính chân thực và tính dân tộc
 - Phản ánh đúng hiện thực, mang bản sắc dân tộc
-### Cần cứ vào đối tượng tiếp cận
+### Căn cứ vào đối tượng tiếp cận
 - Linh hoạt nội dung và hình thức theo đối tượng`;
 
 let mm;
