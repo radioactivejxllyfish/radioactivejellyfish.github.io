@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Chí Minh - Sơ Đồ Tư Duy Tương Tác</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hồ Chí Minh</h1>
+            <p class="subtitle">Vũ Việt Nam 12a6</p>
+        </header>
+
+        <div class="controls">
+            <button id="fitBtn" class="btn">Fit View</button>
+            <button id="zoomInBtn" class="btn">Zoom In</button>
+            <button id="zoomOutBtn" class="btn">Zoom Out</button>
+        </div>
+
+        <div class="background-layer">
+            <div class="bg-image"></div>
+            <div class="portrait-container" id="portraitContainer">
+                <img src="Potrait.png" alt="Hồ Chí Minh" class="hcm-portrait">
+            </div>
+        </div>
+        <svg id="mindmap"></svg>
+
+        <div id="infoModal" class="info-modal">
+            <div class="modal-content-info">
+                <span class="modal-close">&times;</span>
+                <div class="modal-image-container" id="modalImageContainer">
+                    <img id="modalImage" alt="" />
+                    <div class="image-loader">Loading image...</div>
+                </div>
+                <h2 id="modalTitle"></h2>
+                <p class="modal-description" id="modalDescription"></p>
+                <div class="modal-details" id="modalDetails"></div>
+                <a id="wikiLink" class="wiki-link" target="_blank" rel="noopener">
+                    <span>Đọc thêm trên Wikipedia</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Interactive Mind Map - Hồ Chí Minh's Life & Literary Legacy</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-view@0.15.4/dist/browser/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markmap-lib@0.15.4/dist/browser/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
